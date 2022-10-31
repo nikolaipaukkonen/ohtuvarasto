@@ -56,7 +56,7 @@ class TestVarasto(unittest.TestCase):
     def test_ota_varastosta_liikaa(self):
         self.assertEqual(self.varasto.ota_varastosta(100), self.varasto.saldo)
 
-    def test_setUp_negatiivinen_tilavuus(self):
+    def test_setUp_negatiivinen_tilavuus(selfia):
         self.varasto_nega = Varasto(-1)
         self.assertEqual(self.varasto_nega.tilavuus, 0)
 
